@@ -8,6 +8,8 @@ export type LocationDocument = Location & Document;
   versionKey: false,
   timestamps: false,
   minimize: true,
+  _id: false,
+  autoIndex: true,
 })
 export class Location {
   @Prop({ type: String, required: true })
