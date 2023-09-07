@@ -6,7 +6,20 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return 'ilias';
+  getHello(): any {
+    return [
+      {
+        id: 1,
+        name: 'ilias',
+      },
+      {
+        id: 2,
+        name: 'abai',
+      },
+      {
+        id: 3,
+        name: 'rinat',
+      },
+    ];
   }
 }
